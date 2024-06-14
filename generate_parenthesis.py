@@ -11,7 +11,7 @@ def generate_parenthesis(n: int):
             backtrack(open_n + 1, closed_n)
             stack.pop()
 
-        if closed_n < open_n:
+        if closed_n < open_n:|
             stack.append(")")
             backtrack(open_n, closed_n + 1)
             stack.pop()
